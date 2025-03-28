@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#hero {
+    height: 600px;
+    background-image: url(../images/hands-typing.jpg);
+
+    background-size: cover;
+    filter: grayscale(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    color: white;
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, .5);
+    text-shadow: #000;
+    justify-items: space-around;
+}
+
+#about-me {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about-me div {
+    grid-area: div1;
+}
+
+#about-me img {
+    grid-area: div2;
+    width: 80%;
+}
+
+#services h2 {
+    max-width: 100%;
+    justify-content: center;
+    background-color: #fafafa;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.card article {
+    background-color: #fff;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.card article h3 {
+    margin-bottom: 0;
+}
+
+.card article p {
+    padding-bottom: 2em;
+}
+
+.btn a:link,
+.btn a:visited {
+    display: inline-block;
+    padding: .8em 1em;
+    background-color: #414361;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #414361;
+    border-radius: 4px;
+
+    margin-top: auto;
+}
+
+#service {
+    background-color: #fafafa;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+.grid article {
+    background-color: #fff;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.grid article h3 {
+    margin-bottom: 0;
+}
+
+.grid article p {
+    padding-bottom: 2em;
+}
+
+.grid a:link,
+.grid a:visited {
+    display: inline-block;
+    padding: .8em 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+
+    margin-top: auto;
+
+}
+
+#work h2 p {
+    max-width: 60%;
+    align-items: center;
+}
+
+.images {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-areas:
+        "img1 img1 img1 img2 img2 img2"
+        "img3 img3 img4 img4 img5 img5";
+}
+
+.images .img-a:nth-child(1) {
+    grid-area: img1;
+}
+
+.images .img-a:nth-child(2) {
+    grid-area: img2;
+}
+
+.images .img-a:nth-child(3) {
+    grid-area: img3;
+}
+
+.images .img-a:nth-child(4) {
+    grid-area: img4;
+}
+
+.images .img-a:nth-child(5) {
+    grid-area: img5;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    align-content: center;
+}
