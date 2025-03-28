@@ -51,23 +51,23 @@ header nav ul {
 #about-me {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
 }
 
 #about-me div {
-    grid-area: div1;
+    /* grid-area: div1; */
 }
 
 #about-me img {
-    grid-area: div2;
+    /* grid-area: div2; */
     width: 80%;
 }
 
 #services h2 {
     max-width: 100%;
-    justify-content: center;
-    background-color: #fafafa;
-    align-items: center;
+    text-align: center;
+  
+
 }
 
 .cards {
@@ -112,7 +112,7 @@ header nav ul {
     margin-top: auto;
 }
 
-#service {
+#services {
     background-color: #fafafa;
 }
 
