@@ -13,7 +13,9 @@ a {
 
 }
 
-
+img {
+    width: 100%;
+}
 
 
 header {
@@ -127,17 +129,19 @@ header nav ul {
 
 
 
+#work h2 {
+    text-align: center;
+}
 
-
-#work h2 p {
+#work p {
     max-width: 60%;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .images {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "img1 img1 img1 img2 img2 img2"
@@ -169,5 +173,5 @@ footer {
     margin-top: 20px;
     background-color: black;
     color: white;
-    align-content: center;
+    text-align: center;
 }
